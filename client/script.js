@@ -4,7 +4,7 @@ import user from './assets/user.svg'
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
 
-let loadInterval
+let loadInterval;
 
 function loader(element) {
     element.textContent = ''
@@ -63,7 +63,7 @@ function chatStripe(isAi, value, uniqueId) {
 }
 
 const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     const data = new FormData(form)
 
